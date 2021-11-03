@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Optional;
+import java.util.Scanner;
+
+class Student{  
+    int phoneno;  
+	  String name;  
+	  Straing email;  
+	 public Student(int phoneno ,String name,String email){  
+	   this.rollno=rollno;  
+	   this.name=name;  
+	   this.email=email;  
+	  }
+	  public int getPhoneno() {
+		return Phoneno;
+	}
+	public void setRollno(int phoneno) {
+		this.phoneno = phoneno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getemail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+  public String toTring()
+  {
+    return pno+name+email;
+  }
+	}  
+
+class demo{  
+	 public static void main(String args[]){ 
+	  System.out.println("Enter number of student");
+	  ArrayList<Student> al=new ArrayList<Student>();  
+	 
+	  Scanner sc=new Scanner(System.in);
+	  int n =sc.nextInt();
+	  //Creating user-defined class objects
+	  for(int i=0;i<n;i++)
+	  {
+		  System.out.println("Enter the name");
+		  int id=sc.nextInt();
+		  System.out.println("Enter the  email");
+		  String name=sc.next();
+		  System.out.println("Enter the Phoneno");
+		  int age=sc.nextInt();
+	  Student s=new Student(name,email,phonemo);
+	  al.add(s);//adding Student class object 
+	  }
+	 
+	  Iterator itr =al.iterator();
+	  while(itr.hasNext())
+	  {
+		  Student s= (Student)itr.next();
+		  System.out.println(s.age +' ' +s.name + ' ' +s.rollno);
+	  }
