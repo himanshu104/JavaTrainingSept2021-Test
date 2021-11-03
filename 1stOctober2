@@ -1,0 +1,31 @@
+class shape
+{
+  public void display()
+  {
+  System.out.print("Inside the display")
+  }
+class Rectangle extends shape
+{
+  public void area()
+  {
+    System.out.print("Inside the area")
+  }
+}
+ class cube extends recatangle
+ {
+  public void volume()
+  {
+   System.out.print("Inside the  volume")
+  }
+ }
+}
+
+public class Tester
+{
+  public Static void main(String args[])
+  {
+    Cube cube=new Cube();
+    cube.display();
+  }
+
+}
