@@ -1,0 +1,27 @@
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class demo11 {
+					public static void main(String[] args)
+					{
+						ArrayList<Integer> list=new ArrayList();
+						System.out.println("Enter the number of integers you want to enter");
+						Scanner sc=new Scanner(System.in);
+						int n=sc.nextInt();
+						for(int i=0;i<n;i++)
+						{
+						  int a=sc.nextInt();
+				          list.add(a);
+						}
+			System.out.println(list);
+	Stream<Integer>stream=list.stream();
+	List<Integer>newlist=stream.filter( i -> i%2==1 ).collect(Collectors.toList());
+	System.out.println(newlist);
+	List<Integer>newList2=list.stream().map( i -> i*i*i).collect(Collectors.toList());
+	System.out.println(newList2);
+}
+
+}	
